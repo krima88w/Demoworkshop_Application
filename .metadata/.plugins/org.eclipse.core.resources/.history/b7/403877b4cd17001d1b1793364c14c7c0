@@ -1,0 +1,18 @@
+package addtocart;
+
+import genericUtilities.BaseClass;
+
+public class Addtocart extends BaseClass {
+	
+	public static void Addtocart1(String usr, String pwd){
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

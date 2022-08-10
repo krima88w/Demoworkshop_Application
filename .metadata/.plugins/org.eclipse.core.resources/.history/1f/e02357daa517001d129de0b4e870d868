@@ -1,0 +1,20 @@
+package Resgistration_Page;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import genericUtilities.BaseClass;
+import objectRepository.Registration;
+
+public class ReadingDataFromExcel extends BaseClass {
+	@Test(dataProvider = "test data", dataProviderClass = ReadExcel.class)
+	public void readingData(String un, String pwd) {
+		driver.findElement(By.xpath("//a[text() = 'Register']")).click();
+		driver.findElement(By.id("gender-male")).click();
+		Registration login = new Registration(driver);
+		login.getFirst_name().sendKeys(un);
+		login.getLast_name().sendKeys(pwd);
+
+
+	}
+}

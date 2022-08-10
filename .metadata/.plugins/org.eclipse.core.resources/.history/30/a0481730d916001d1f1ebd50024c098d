@@ -1,0 +1,30 @@
+package Java_interview;
+
+import java.util.Iterator;
+
+public class Stringcount1 
+{
+	public static void main(String[] args) {
+		
+		String a = "manjunath";
+		String b = "";
+		char cha;
+		int count = 0;
+		
+		for (int i = 0; i < a.length(); i++) {
+			
+			cha = a.charAt(i);
+			b = cha+b;
+			{
+			//
+			
+			
+		}
+
+		System.out.println(b);
+
+
+	}
+
+
+}

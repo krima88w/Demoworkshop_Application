@@ -1,0 +1,16 @@
+package javapract;
+
+public class CharacterOccurancecount {
+	
+	public static void main(String[] args) {
+		
+		String str = "Java Programming Java opps";
+		int len = str.length();
+		String rep = str.replace("a", "");
+		System.out.println(rep);
+		
+		
+		
+	}
+
+}

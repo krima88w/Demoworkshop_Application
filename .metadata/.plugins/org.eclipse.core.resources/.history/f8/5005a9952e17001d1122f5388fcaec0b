@@ -1,0 +1,32 @@
+package login;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import genericUtilities.BaseClass;
+import genericUtilities.ExcelUtility;
+import objectRepository.LoginPage;
+
+public class ReadingDataFromExcel extends BaseClass {
+	@Test(dataProvider = "test data",dataProviderClass =ExcelUtility.class)
+	public void readingData(String un, String pwd) {
+		driver.findElement(By.xpath("//a[text() = 'Register']")).click();
+		driver.findElement(By.id("gender-male")).click();
+		LoginPage login = new LoginPage(driver);
+		login.getFirst_name().sendKeys(un);
+		login.getLast_name().sendKeys(pwd);
+		driver.close();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+
+}

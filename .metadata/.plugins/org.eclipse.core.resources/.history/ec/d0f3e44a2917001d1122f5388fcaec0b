@@ -1,0 +1,20 @@
+package login;
+
+import org.testng.annotations.Test;
+
+import genericUtilities.BaseClass;
+import objectRepository.LoginPage;
+
+public class ReadingDataFromExcel extends BaseClass {
+	@Test
+	public void readingData(String un, String pwd) {
+		
+		LoginPage login=new LoginPage(driver);
+		
+		
+		
+		
+	}
+	
+
+}

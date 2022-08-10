@@ -1,0 +1,34 @@
+package Java_interview;
+
+public class Words_reverse {
+	public static void main(String[] args) {
+
+		String str = "Java Programming Language";
+		String rev = "";
+		String words[]= str.split("\\s");
+		
+
+		
+		for (int i = 0; i < str.length(); i++) {
+			
+		String words1 = words[i];
+		String revw="";
+		
+		for (int j= str.length()-1; j >=0; j--) {
+
+			revw = revw + words1.charAt(i);
+
+		}
+		System.out.println(revw);
+
+		
+			
+		}
+		
+		
+		
+	}
+}
+
+
+

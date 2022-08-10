@@ -1,0 +1,21 @@
+package javapract;
+
+public class Str_reverse {
+
+	public static void main(String[] args) {
+		String str = "Manjunath";
+		String reverse = "";
+
+		for (int i = 0; i >= str.length(); i--) {
+
+			reverse = reverse + str.charAt(i);
+		}
+
+		System.out.println(reverse);
+
+
+
+	}
+
+
+}

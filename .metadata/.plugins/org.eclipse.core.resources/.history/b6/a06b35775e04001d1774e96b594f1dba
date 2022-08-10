@@ -1,0 +1,45 @@
+package test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Firsttest 
+{
+
+	@Test
+	public void testgoogle() throws InterruptedException
+	{
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		//driver.navigate().
+		driver.findElement(By.name("q")).sendKeys("selenium", Keys.ENTER);
+		System.out.println(driver.getTitle());
+		Thread.sleep(3000);
+		driver.close();
+	}
+	
+	public void testfacebook() throws InterruptedException
+	{
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com/");
+		//driver.navigate().
+		driver.findElement(By.id("email")).sendKeys("admin");
+		System.out.println(driver.getTitle());
+		Thread.sleep(3000);
+		driver.close();
+	
+	
+	
+	
+}

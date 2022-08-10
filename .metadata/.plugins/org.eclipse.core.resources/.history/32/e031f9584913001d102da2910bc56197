@@ -1,0 +1,21 @@
+package genericUtilities;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class UtilityClass implements IAutoConstants{
+	public  static void property_file_reader(String Key) throws IOException{
+
+		FileInputStream fis = new FileInputStream(PROPERTYFILEPATH);
+		Properties prop = new Properties();
+		prop.load(fis);
+		String url = prop.getProperty("url");
+		String firstname= prop.getProperty("Firstname");
+		String lastna = prop.getProperty("lastname");
+		String emai = prop.getProperty("Email");
+		String passwo = prop.getProperty("password");
+		String confirmpa = prop.getProperty("confirm_password");
+	}
+
+}

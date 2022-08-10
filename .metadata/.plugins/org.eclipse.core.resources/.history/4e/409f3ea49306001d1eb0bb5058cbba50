@@ -1,0 +1,8 @@
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class TC002_POST_Request {
+	RestAssured.baseURI="https://reqres.in/api/products";
+	RequestSpecification httprequest = RestAssured.given();
+
+}

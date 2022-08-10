@@ -1,0 +1,25 @@
+package assertions;
+
+import static org.testng.Assert.assertEquals;
+
+import org.testng.annotations.Test;
+
+public class AssertionsDemo 
+{
+
+	
+	@Test
+	public void demoForAssertions() 
+	{
+		
+	String Expectedvalue = "hello";
+	String Actualvalue = "hell";
+	
+	assertEquals(Expectedvalue, Actualvalue);	
+	
+		
+	}
+	
+	
+
+}
